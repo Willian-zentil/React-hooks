@@ -28,6 +28,10 @@ function UseEffectCustom(){
         <p style={general}>Esse trecho de código é baseado no exemplo de contador da página anterior, mas nós adicionamos uma nova funcionalidade a ele</p>
         <p style={general}>Buscar dados, configurar uma subscription, e mudar o DOM manualmente dentro dos componentes React são exemplos de efeitos colaterais.</p>
         <a href="https://pt-br.reactjs.org/docs/hooks-effect.html" target="blank">Link</a>
+
+        <p style={general}>O useEffect executa após cada renderização, e este diz ao React que o componente precisa fazer algo apenas depois da renderização, ele é uma combinação do componentDidMount, componentDidUpdate e componentWillUnmount.</p>
+
+        <p>Efeito com limpeza / sem limpeza</p>
       </div>   
   )
 }
