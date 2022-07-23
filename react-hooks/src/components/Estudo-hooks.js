@@ -1,14 +1,17 @@
 import './Estudo-hooks.css';
 import UseStatetCustom from'./StateHook';
 import UseEffectCustom from'./UseEffect';
+import RegrasHooks from './RegrasHooks';
+import CustomHooks from './CustomHook';
 
 function EstHooks() {
 
   const general = {
-    fontSize: "14px",
+    fontSize: "13px",
     fontWight: "inherit",
     margin: "20px auto",
     maxWidth: "600px",
+    fontWeight: "100",
   };
 
   const title = {
@@ -37,17 +40,17 @@ function EstHooks() {
 
         <div style={divider}></div>
         <h3 style={title}>Use effect</h3>
-        <UseEffectCustom />
         <p style={general}>Você provavelmente já realizou obtenção de dados (data fetching), subscrições (subscriptions) ou mudanças manuais no DOM através de componentes React antes. Nós chamamos essas operações de “efeitos colaterais” (side effects ou apenas effects) porque eles podem afetar outros componentes e não podem ser feitos durante a renderização. O Hook de Efeito, `useEffect`, adiciona a funcionalidade de executar efeitos colaterais através de um componente funcional.</p>
+        <UseEffectCustom />
 
 
         <div style={divider}></div>
         <h3 style={title}>Regras dos Hooks</h3>
-
+        <RegrasHooks />
         
         <div style={divider}></div>
         <h3 style={title}>Criando seu proprio Hook</h3>
-
+        <CustomHooks />
 
     </div>
   );
