@@ -2,6 +2,7 @@ import './Estudo-hooks.css';
 import UseStatetCustom from'./StateHook';
 import UseEffectCustom from'./UseEffect';
 import RegrasHooks from './RegrasHooks';
+import CustomHooks from './CustomHook';
 
 function EstHooks() {
 
@@ -46,6 +47,10 @@ function EstHooks() {
         <div style={divider}></div>
         <h3 style={title}>Regras dos Hooks</h3>
         <RegrasHooks />
+        
+        <div style={divider}></div>
+        <h3 style={title}>Criando seu proprio Hook</h3>
+        <CustomHooks />
 
     </div>
   );
